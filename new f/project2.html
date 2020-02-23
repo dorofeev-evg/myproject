@@ -1,0 +1,160 @@
+<html>
+	
+	<title> PROJECT </title>
+	
+	<head>
+	
+		<meta http-equiv="content-type" content="text/html"; charset="utf-8" />
+		 
+	</head>
+			  
+			 
+	<body>
+			 
+ 
+			   <div>
+				  
+				<p> <a href="https://www.youtube.com/watch?v=wpYBO8ERYTM&list=PLM7wFzahDYnFjBTkfRTRlusyp_tlZ9rYz&index=40"> 
+				  JS  </a> </p>
+			<p> <a href="https://msiter.ru/tutorials/javascript/js_htmldom_document"> Function</a> </p>
+			 
+			 <p> <a href=" https://www.youtube.com/watch?v=DK2PsTcSFFM&list=PLg5SS_4L6LYstwxTEOU05E0URTHnbtA0l"> GIT</a> </p>
+			
+			<p> <a href=" https://www.youtube.com/watch?v=JfpCicDUMKc"> GIT 1</a> </p>
+			
+			 <p> <a href="https://www.youtube.com/watch?v=9dkzbSnN2FQ&list=PLuY6eeDuleIOMB2R_Kky05ZfiAx2_pbAH&index=3"> GIT </a></p>
+			 
+		</div>                     
+		<div>
+		<script type="text/javascript"> 
+		function ffg(){
+			  
+			 push.innerHTML = (document.getElementById('inp').value*document.getElementById('inp').value);
+			 // вывести квадрат числа , внимание на синтаксис
+			 
+			 /* чтобы не писать длинные строки, используют переменные и присваивают им значения
+			 например:
+			 var b
+			 b = document.getElementById('inp')
+			 alert ( b * b )
+			 остановился на калькуляторе
+			*/
+			 }
+			  
+			  </script>
+			<p>Введите число: <input type="text" id="inp"> </input>  
+			<button onclick="ffg()"> Получить: </button> </p>
+			<p id="push"> </p>
+			  
+			</div>
+
+	 	 <div>
+		 <script type="text/javascript">
+		 /*  function res (){ 
+		     var res  
+			 res = document.getElementById('res');
+		 // a1 = document.getElementById('a1')=document.getElementById('res');
+		   res.innerHTML += '1';
+		   // += означает взять то что есть и прибавить еще одно, так будет выполняться при последующем нажатии
+		   
+		   // при использ. innerHTML можно добавлять теги из HTML н-р: res.innerHTML += '<b>1</b>';
+		   
+		   // команда innerText выводит запись в браузер без изменений (например если надо ПОКАЗАТЬ код HTML в браузере)
+		   
+		     .insertAdjacentHTML('',''); добавляет запись перед тегом, внутри до начала тега, в конце тега и после тега,
+		     имеет свойства/параметры, которые прописываются в ковычках: beforeBegin, afterBegin, beforeEnd, afterEnd
+			 .insertAdjacementText('',''); тоже самое только без обработки
+			 .outerHTML=''; команда заменяет теги, н-р:
+			 p.outerHTML = '<div class"one">hello</div>' заменит текущую запись в параграфе на запись которую прописали,
+			 также в дальнейшем можно выполнять манипуляции с классом в CSS
+		    
+		   
+		 }*/
+				 function a1(){
+				var res;
+				res = parseInt(res);
+				res = document.getElementById('res');
+				res.innerHTML = 1;
+				}
+		   function a2(){
+				var res;
+				res = parseInt(res);
+				res = document.getElementById('res');
+				res.innerHTML += 2;
+				}
+				function a3(){
+				var res;
+				res = document.getElementById('res');
+				res.innerHTML += 3;
+				}
+				function g1(){
+				var res;
+				res = document.getElementById('res');
+				res.innerHTML += '+';
+				}
+				function j1(){
+				  var a1; a2; a3;
+				  a1 = document.getElementById('res').value;
+				  a1 = parseInt(a1);
+				  a1 = 1;
+				  a2 = document.getElementById('res').value;
+				  a2 = parseInt(a2);
+				  a2 = 2;
+				  a3 = document.getElementById('res').value;
+				  a3 = parseInt(a3);
+				  a3 = 3;
+				  result = a1 + a2;
+				   
+				  //result = parseInt(result);
+				  
+				  document.getElementById('res').innerHTML = result;
+				 
+				} 
+		 </script>
+		   <p id="res"> Число: </p> 
+		 <button onclick="a1()">1</button> <button onclick="a2()">2</button>  <button onclick="a3()">3</button> 
+		 <button onclick="g1()">+</button>
+		 <button onclick="j1()">=</button>
+		   
+		  <button onclick="end()">результат</button> 
+	 	 </div>
+		 <br>
+		<br>
+		<br>
+		<br>
+			 
+		<!- Ветвление в JS выполняется при помощи
+		    if - если
+		    else - или
+			 else if - не то и не другое (третье) 
+			 остановился на игре угадай число //
+			 
+		 ------------- ЦИКЛ for запускает цикл с переменными, 
+		при которых задаются начальные и конечные условия и 
+		манипуляции с ними  , н-р:
+		
+		
+		 
+		!>
+		 
+		<script type="text/javascript">
+		function  f1 (){ 
+		var p
+		p = document.getElementById('ter');
+		
+		for (var i = 1; i < 100; i++) {
+		p.innerHTML += i+'  ';
+		// шаг i=1 можно изменять, н-р i=2 и т.д
+		}
+		}
+		</script>
+		  <button onclick="f1()"> Получить: </button>  
+		<p id="ter"> </p>
+				 
+						 ------------- ЦИКЛ while с предусловиями и
+									 ЦИКЛ  do....while
+			
+		 
+	</body> 
+	
+	</html>
