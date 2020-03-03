@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	
+	<title> Calculator </title>
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="content-type" content="text/html"; charset="utf-8" />
+		<link rel="stylesheet" href="style.css">  
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	</head>
+			  
+			 
+	<body>
+	<center>
+			<div id="app">
+			
+			<div class="vert">
+			<input type="text" style="width: 300px;"v-model="result" placeholder="0">
+			<button v-on:click="input(num)" class="cell num" v-for="num in numbers">{{ num }} </button>
+			<button v-on:click="input(op)" class="cell op" v-for="op in operations">{{ op }} </button>
+			<button v-on:click="reset()"class="cell op">R</button>
+			<button v-on:click="calc()"class="cell op">=</button>
+			
+			  </div>
+			</div>
+			   
+					   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"> </script>
+				<script>	 
+					 new Vue ({
+					 el: '#app',
+					 data: {
+					 result: '',
+					 numbers: [1,2,3,4,5,6,7,8,9,0],
+					 operations: ['+','-','*','/'],
+					 },
+					 methods: {
+					 input: function(char) {
+					 this.result+=char;
+					 },
+					 reset: function() {
+					 this.result = this.result.toString();
+					 this.result = '';
+					 },
+					 calc: function() {
+					 this.result = eval(this.result);
+					 }
+					 }
+					 
+					 })
+					 
+			 
+		</script>
+		
+			 </center>
+	</body>
+	  
+	</html>

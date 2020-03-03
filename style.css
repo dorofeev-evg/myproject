@@ -1,0 +1,41 @@
+ body {
+ font-family: 'Glory' ,sans-serif;
+ transition: 0.3s all;
+ font-weight: 600;
+ }
+  #app {
+	width:200px;
+	box-shadow: 0 3px 15px grey;
+ }
+   input [type="text"] {
+ width: 300px;
+ border: 0;
+ color: white;
+ font-size: 20px;
+  padding: 5px 5 px;
+ text-align: right;
+ }
+.vert {
+display: flex;
+flex-wrap: wrap;
+justify-content: spase-around;
+width: 100%;
+}
+ .cell {
+flex: 33%;
+hight: 50px;
+font-size: 18px;
+border: none;
+}
+.num {
+background-color: #243849;
+color: green;
+font-weight: 400;
+}
+.cell:hover {
+background-color: #182530;
+}
+.op {
+background-color: yellow;
+color: blue;
+}
